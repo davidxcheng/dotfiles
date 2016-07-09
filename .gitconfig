@@ -1,6 +1,6 @@
 [alias]
 	br = branch
-	cm = commit 
+	cm = commit -v
 	cmm = commit -m
 	cam = commit -a -m
 	co = checkout
@@ -12,7 +12,16 @@
 	
 [diff]
         compactionHeuristic = true
+        tool = kdiff3
 
 [push]
 	default = current
 
+[merge]
+	tool = kdiff3
+
+[mergetool "kdiff3"]
+	path = "/usr/local/bin/kdiff3"
+
+[difftool "kdiff3"]
+	path = "/usr/local/bin/kdiff3"

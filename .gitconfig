@@ -10,6 +10,7 @@
 	logo = log --oneline
 	lom = log --oneline ..origin/master
 	lod = log --oneline ..origin/develop
+	lop = log --pretty=format:"%h%x09%aI%x09%an%x09%s"
 	st = status -s
 [diff]
 	compactionHeuristic = true

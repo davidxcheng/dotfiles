@@ -4,24 +4,26 @@
 	cmm = commit -m
 	cam = commit -a -m
 	co = checkout
-	fetch = fetch -p
+	fp = fetch -p
 	gr = reset --hard HEAD
 	logg = log --oneline --graph --color --decorate --all
 	logo = log --oneline
+	lom = log --oneline ..origin/master
+	lod = log --oneline ..origin/develop
 	st = status -s
-	
 [diff]
-        compactionHeuristic = true
-        tool = kdiff3
-
-[push]
-	default = current
-
-[merge]
+	compactionHeuristic = true
 	tool = kdiff3
-
-[mergetool "kdiff3"]
-	path = "/usr/local/bin/kdiff3"
-
 [difftool "kdiff3"]
 	path = "/usr/local/bin/kdiff3"
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = "/usr/local/bin/kdiff3"
+[pager]
+	log = diff-highlight | less
+	show = diff-highlight | less
+	diff = diff-highlight | less
+[push]
+	default = current
+	followTags = true

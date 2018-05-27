@@ -1,0 +1,31 @@
+{
+    "editor.codeLens": false,
+    "editor.dragAndDrop": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "off",
+    "files.trimTrailingWhitespace": true,
+    "files.defaultLanguage": "markdown",
+    "search.location": "panel",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "vs-seti",
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#FF00FF"
+    },
+    "window.zoomLevel": 0,
+    "mssql.connections": [
+        {
+            "server": "my.little.server",
+            "database": "xox",
+            "authenticationType": "SqlLogin",
+            "user": "dba",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": false,
+            "profileName": "Test",
+            "connectTimeout": 30,
+            "encrypt": true,
+            "applicationName": "vscode-mssql"
+        }
+    ]
+}

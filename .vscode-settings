@@ -4,6 +4,7 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.wordWrap": "off",
+    "explorer.openEditors.visible": 0,
     "files.trimTrailingWhitespace": true,
     "files.defaultLanguage": "markdown",
     "search.location": "panel",

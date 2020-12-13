@@ -9,8 +9,6 @@ to get my preferred setting configured in a fresh unix/linux installation.
     chmod 744 install.sh
     ./install.sh
 
-As of 2015-10-03 `install.sh` has an untested command for creating a `slime` symlink to Sublime Text
-
 ## ToDo
 
 - Move `autorun.bat` to a windows setup repo

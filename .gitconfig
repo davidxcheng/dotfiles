@@ -1,30 +1,31 @@
 [alias]
-	br = branch
-	cm = commit -v
-	cmm = commit -m
-	cam = commit -a -m
-	co = checkout
-	fp = fetch -p
-	gr = reset --hard HEAD
-	logg = log --oneline --graph --color --decorate --all
-	logo = log --oneline
-	lom = log --oneline ..origin/master
-	lod = log --oneline ..origin/develop
-	lop = log --pretty=format:"%h%x09%aI%x09%an%x09%s"
-	st = status -s
+  br = branch
+  cm = commit -v
+  cmm = commit -m
+  cam = commit -a -m
+  co = checkout
+  fp = fetch -p
+  gr = reset --hard HEAD
+  lg = log --oneline -6
+  logg = log --oneline --graph --color --decorate --all
+  logo = log --oneline
+  lom = log --oneline ..origin/master
+  lod = log --oneline ..origin/develop
+  lop = log --pretty=format:"%h%x09%aI%x09%an%x09%s"
+  st = status -s
 [diff]
-	compactionHeuristic = true
-	tool = kdiff3
+  compactionHeuristic = true
+  tool = kdiff3
 [difftool "kdiff3"]
-	path = "/usr/local/bin/kdiff3"
+  path = "/usr/local/bin/kdiff3"
 [merge]
-	tool = kdiff3
+  tool = kdiff3
 [mergetool "kdiff3"]
-	path = "/usr/local/bin/kdiff3"
+  path = "/usr/local/bin/kdiff3"
 [pager]
-	log = diff-highlight | less
-	show = diff-highlight | less
-	diff = diff-highlight | less
+  log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less
 [push]
-	default = current
-	followTags = true
+  default = current
+  followTags = true

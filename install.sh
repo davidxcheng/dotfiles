@@ -28,13 +28,3 @@ fi
 
 # for the c alias (syntax higglighted cat)
 sudo easy_install Pygments
-
-read -p "Create symlink to Sublime? (y/n)" -n 1 -r DoSlime
-echo
-if [[ $DoSlime =~ [Yy] ]]
-then
-	echo Creating slime symlink
-	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/slime
-else
-	echo Skipping slime symlink
-fi

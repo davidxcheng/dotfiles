@@ -22,7 +22,8 @@ OS X is based on the open source OS called Darwin which in turn is a fork of BSD
 `#!/usr/bin/env bash` will make `bash` the interpreter.
 - All shell sessions are login shell in Darwin/OS X
 - Darwin/OS X runs `~/.bash_profile` that sources `~/.bashrc`
-- When running the `default` commands in the .osx-file the changes are persisted in ~/Library/Preferences. No need to run it on every boot.
+- When running the `default` commands in the .osx-file the changes are persisted in `~/Library/Preferences`. No need to run it on every boot.
 
 [Info about the order in which files are read](http://dghubble.com/blog/posts/.bashprofile-.profile-and-.bashrc-conventions/)
 
+[Info about accounts on a mac](https://www.dyx.name/posts/macunix.html)

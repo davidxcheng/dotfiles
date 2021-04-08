@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# Once these commands run the changes are persisted in ~/Library/Preferences
+# Therefore there is no reason to source this file from .bash_profile that runs on every boot. But it might
+# still be handy to have this file in the home directory (makes it easy to see which defaults has been changed)
+
+# ~/.osx (not present on fresh install)
+
+# Ask for the administrator password upfront
+sudo -v
+
+if [ $(uname -s) = "Darwin"]
+then
+    # Set a balzingly fast keyboard repeat rate
+    defaults write NSGlobalDomain InitialKeyRepeat -int 15
+    defaults write NSGlobalDomain KeyRepeat -int 1
+
+    # Disable the sound effects on boot
+    sudo nvram SystemAudioVolume=%00
+
+    ###############################################
+    # Trackpad and mouse
+    ###############################################
+
+    # Trackpad: enable tap to click for this user and for the login screen
+    defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+    defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+    defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+    ###############################################
+    # Finder
+    ###############################################
+
+    # Show hidden files by default
+    defaults write com.apple.Finder AppleShowAllFiles -bool false
+
+    # Show all file name extensions
+    defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+    # Allow quitting via cmd + Q; doing so will also hide desktop icons
+    # This setting is not working on Yosemite 10.10.5
+    defaults write com.apple.finder QuitMenuItem -bool true
+
+    # Display full POSIX path as Finder window title
+    defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+    # Disable the warning when changing a file extension
+    defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+fi

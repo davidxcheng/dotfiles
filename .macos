@@ -13,7 +13,7 @@ if [ $(uname -s) = "Darwin"]
 then
     # Set a balzingly fast keyboard repeat rate
     defaults write NSGlobalDomain InitialKeyRepeat -int 15
-    defaults write NSGlobalDomain KeyRepeat -int 1
+    defaults write NSGlobalDomain KeyRepeat -int 2
 
     # Disable the sound effects on boot
     sudo nvram SystemAudioVolume=%00

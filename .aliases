@@ -1,6 +1,7 @@
 alias ..="cd .."
 alias node="node --harmony --harmony_destructuring"
 alias l="ls -lah"
+alias gl="git log --oneline -6"
 
 # `cat` with beautiful colors. requires: sudo easy_install -U Pygments
 alias c="pygmentize -O style=monokai -f console256 -g"

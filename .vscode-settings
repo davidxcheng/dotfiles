@@ -8,12 +8,16 @@
     "files.trimTrailingWhitespace": true,
     "files.defaultLanguage": "markdown",
     "search.location": "panel",
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Light Pink",
     "workbench.iconTheme": "vs-seti",
     "workbench.colorCustomizations": {
-        "tab.activeBorder": "#FF00FF"
+        "tab.activeBorder": "#FF00FF",
+        "[Light Pink]": {
+            "editorWhitespace.foreground": "#DDD"
+        }
     },
     "window.zoomLevel": 0,
+    "scss.format.enable": false,
     "mssql.connections": [
         {
             "server": "my.little.server",
